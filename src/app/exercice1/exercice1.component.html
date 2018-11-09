@@ -1,3 +1,10 @@
-<p>
-  exercice1 works!
-</p>
+<h1>{{title}}</h1>
+<br/><br/>
+<label for = "anniv">date de naissance :</label>
+<input [type]="date" name = "anniv" />
+<br/><br/>
+<label for = "pseudo"> Entrez un pseudo :  </label>
+<input type="pseudo" (input)="pseudo=$event.target.value" name = "pseudo" />
+<p>Bonjour {{pseudo}}</p>
+
+
