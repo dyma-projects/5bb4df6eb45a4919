@@ -9,7 +9,7 @@ import { BrowserModule } from '@angular/platform-browser';
 export class Exercice4Component implements OnInit {
   public nombres : Array<{ nombre }> = [];
   constructor() {
-    this.nombres.push({nombre : "un"});
+    this.nombres.push({nombre :"un"});
     this.nombres.push({nombre : "deux"});
     this.nombres.push({nombre : "trois"});
   }
@@ -18,9 +18,3 @@ export class Exercice4Component implements OnInit {
   }
 
 }
-@NgModule({
-  imports: [ BrowserModule ],
-  declarations: [ Exercice4Component ],
-  bootstrap: [ Exercice4Component ]
-})
-export class AppModule {}
