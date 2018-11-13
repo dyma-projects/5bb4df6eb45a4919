@@ -6,20 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./exercice3.component.css']
 })
 export class Exercice3Component implements OnInit {
-  p1:{};
-  p2:{};
-  public statut : boolean = true ;
-  trueOrFalse(event : Event): void{
-    if (this.statut=== true){
-      this.statut = false;
-      console.log(this.statut);
-    }
-    else{
-      this.statut = true;
 
-      console.log(this.statut)
-    }
-  }
+  public statut : boolean = true ;
   constructor() { }
 
   ngOnInit() {

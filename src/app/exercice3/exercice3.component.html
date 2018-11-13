@@ -2,7 +2,8 @@
 <h1>Exercice 3</h1>
 <br />
 <div>
-  <button (click)="trueOrFalse($event)">Cliquez ici</button>
-  <p [ngClass]="p1"> Paragraphe 1</p>
-  <p [ngClass]="p2"> Paragraphe 2</p>
+  <button (click)="statut=!statut">Cliquez ici</button>
+  <p *ngIf="statut"> Paragraphe 1</p>
+  <p *ngIf ="statut - 1"> Paragraphe 2</p> //utilisation du binaire
+  //il y a t'il un moyen plus approprié ?
 </div>
