@@ -1,7 +1,8 @@
 <br />
 <h1>Exercice 3</h1>
 <br />
-<button>Cliquez ici</button>
 <div>
-  <p class = "p1"> Paragraphe 1</p>
-  <p class = "p2"> Paragraphe 2</p></div>
+  <button (click)="trueOrFalse($event)">Cliquez ici</button>
+  <p [ngClass]="p1"> Paragraphe 1</p>
+  <p [ngClass]="p2"> Paragraphe 2</p>
+</div>
